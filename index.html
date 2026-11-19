@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja" data-title-ja="わりふり｜シフト表の自動作成と勤務表" data-title-en="Warifuri | Shift schedule maker">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"ja"],p="en";for(var i=0;i<l.length;i++){var c=String(l[i]).toLowerCase();if(c.indexOf("ja")===0){p="ja";break}if(c.indexOf("en")===0){p="en";break}}var d=document.documentElement;d.lang=p;var t=d.getAttribute("data-title-"+p);if(t){document.title=t}})();</script>
+<title>わりふり｜シフト表の自動作成と勤務表</title>
+<meta name="description" content="休み希望とできる勤務・必要な人数から月のシフト表を自動で組み、夜勤明けと連勤の上限を守る。画像・PDF・印刷で配る。サーバーとログインなし。買い切り・広告なし。 / Auto-fill a monthly shift schedule from day-off requests, shift types and staffing needs, keeping night-shift and consecutive-day rules. Share as image, PDF or print. One purchase, no ads.">
+<meta property="og:title" content="わりふり｜シフト表の自動作成と勤務表">
+<meta property="og:description" content="休み希望とできる勤務・必要な人数から月のシフト表を自動で組み、夜勤明けと連勤の上限を守る。画像・PDF・印刷で配る。サーバーとログインなし。買い切り・広告なし。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://warifuri.tsuzukit.com/">
+<meta property="og:image" content="https://warifuri.tsuzukit.com/assets/og.jpg">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div data-l="ja" lang="ja">
+<header class="site"><div class="wrap">
+<a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32">わりふり</a>
+<nav class="site"><a href="./">紹介</a><a href="support.html">使い方</a><a href="privacy.html">プライバシー</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<p class="eyebrow">iPhone・iPad・Android のシフトづくり</p>
+<h1>休み希望を入れて、<br>［自動で組む］。</h1>
+<p class="lead">スタッフの休み希望・できる勤務・必要な人数から、月のシフト表を自動で組みます。夜勤のあとの「明け」と「休み」、連勤の上限、週の休みは必ず守り、足りない日は理由つきで赤く残します。手で直したら、画像・PDF・印刷でそのまま配れます。</p>
+<a class="cta" href="#store" id="store">App Store・Google Play で配信予定</a>
+<p class="note">サーバーもログインもないので、急に入れなくなったり、データが消えたりしません。買い切りで全部の機能が使え、スタッフの人数にも制限はありません。アプリ内課金・サブスクリプション・広告はありません。</p>
+</div>
+<img src="assets/hero.jpg" alt="月のシフト表のマスが埋まっていくイラスト" width="360">
+</section>
+
+<h2>こんな困りごとのために</h2>
+<div class="grid two">
+<div class="card"><h3>自動なのに条件を守らない</h3><p>休み希望・できる勤務と曜日・夜勤明け・連勤の上限・週の休み・手で入れたマスは破りません。足りないマスは赤で残して理由を出します。</p></div>
+<div class="card"><h3>ログインできない・データが消えた</h3><p>サーバーを使いません。iCloud Drive の書類と毎日の控え・ゴミ箱で守ります。</p></div>
+<div class="card"><h3>配るのに手間がかかる</h3><p>全員の月の表・人ごとの表を、画像・PDF（A4／A3 横）・印刷・CSV で。</p></div>
+<div class="card"><h3>曜日がずれる・月の全体が見えない</h3><p>週の始まりを職場ごとに選べます。iPad や横向きで、月の全体を1枚で。</p></div>
+<div class="card"><h3>夜勤の時刻が入らない</h3><p>22 時以降や日付をまたぐ勤務も。勤務の種類の数に制限はありません。</p></div>
+<div class="card"><h3>無料版は3人まで</h3><p>人数・勤務の種類・職場の数に制限はありません。</p></div>
+</div>
+
+<h2>できること</h2>
+<table>
+<tr><th>組む</th><td>休み希望・できる勤務と曜日・必要な人数（曜日と祝日ごと）・月の上限日数・夜勤の並び・連勤の上限・固定のマス</td></tr>
+<tr><th>知らせる</th><td>休憩・1 日 8 時間と週 40 時間・深夜・週の休み（労働基準法の条文の数字による目安。法律の判断はしません）</td></tr>
+<tr><th>配る</th><td>画像・PDF・印刷・CSV・人件費の目安（時給を入れたとき）</td></tr>
+<tr><th>データ</th><td>iCloud Drive の書類・毎日の控え・アカウントなし・解析と広告なし</td></tr>
+</table>
+<p class="note">祝日は内閣府の「国民の祝日」の情報を使っています。出典：内閣府ウェブサイト「<a href="https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html">国民の祝日について</a>」、<a href="https://www.digital.go.jp/resources/open_data/public_data_license_v1.0">PDL1.0</a>（2026年11月20日に利用）。CSV をアプリで使う形に変えたのは TsuzuKit です。</p>
+<p class="note"><a href="support.html">使い方</a>・<a href="privacy.html">プライバシーポリシー</a>・<a href="terms.html">利用規約</a>もご覧ください。</p>
+</main>
+<footer class="site"><div class="wrap">
+<p><a href="./">紹介</a><a href="support.html">使い方とお問い合わせ</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシーポリシー</a></p>
+<p>わりふりは、個人開発者の續橋涼（TsuzuKit）が作っているアプリです。</p>
+<p>© 2026 TsuzuKit</p>
+</div></footer>
+</div>
+<div data-l="en" lang="en">
+<header class="site"><div class="wrap">
+<a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32">Warifuri</a>
+<nav class="site"><a href="./">About</a><a href="support.html">Help</a><a href="privacy.html">Privacy</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<p class="eyebrow">Shift scheduling for iPhone, iPad and Android</p>
+<h1>Enter day-off requests,<br>then tap Auto-fill.</h1>
+<p class="lead">Auto-fill a monthly shift schedule from staff day-off requests, the shifts each person can work and how many people you need. The post-night day and day off after a night shift, consecutive-day limits and weekly days off are always kept, and understaffed days stay red with the reason. Adjust by hand and share as an image, PDF or printout.</p>
+<a class="cta" href="#store" id="store">Coming to the App Store and Google Play</a>
+<p class="note">No server and no login, so you never get locked out or lose your data. One purchase unlocks everything, with no limit on staff. No in-app purchases, subscriptions or ads.</p>
+</div>
+<img src="assets/hero.jpg" alt="Illustration of a monthly shift grid filling up" width="360">
+</section>
+
+<h2>Made for these problems</h2>
+<div class="grid two">
+<div class="card"><h3>Auto-fill that ignores rules</h3><p>Day-off requests, allowed shifts and weekdays, post-night rules, consecutive-day limits, weekly days off and cells you set by hand are never broken. Short days stay red with the reason.</p></div>
+<div class="card"><h3>Locked out or lost data</h3><p>No server. Your data is kept in an iCloud Drive document with daily backups and Trash.</p></div>
+<div class="card"><h3>Hard to share</h3><p>The whole month or one person's schedule as an image, PDF (A4/A3 landscape), printout or CSV.</p></div>
+<div class="card"><h3>Wrong weekdays, no month view</h3><p>Choose the week start per workplace. See the whole month at once on iPad or in landscape.</p></div>
+<div class="card"><h3>Night shift times won't fit</h3><p>Shifts after 10 p.m. and across midnight, with no limit on shift types.</p></div>
+<div class="card"><h3>Free plan limited to 3 people</h3><p>No limit on staff, shift types or workplaces.</p></div>
+</div>
+
+<h2>What it does</h2>
+<table>
+<tr><th>Auto-fill</th><td>Day-off requests, allowed shifts and weekdays, staffing needs by weekday and holiday, monthly day limits, night-shift order, consecutive-day limits, locked cells</td></tr>
+<tr><th>Warnings</th><td>Breaks, 8 hours a day and 40 hours a week, late night, weekly days off (estimates from figures in Japan's Labor Standards Act; not legal judgments)</td></tr>
+<tr><th>Share</th><td>Image, PDF, print, CSV, estimated labor cost (when wages are entered)</td></tr>
+<tr><th>Data</th><td>iCloud Drive document, daily backups, no account, no analytics or ads</td></tr>
+</table>
+<p class="note">Holidays use Japan's national holiday data from the Cabinet Office. Source: Cabinet Office website, "<a href="https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html">National Holidays</a>" (in Japanese), <a href="https://www.digital.go.jp/resources/open_data/public_data_license_v1.0">PDL1.0</a> (used on November 20, 2026). The CSV was converted for the app by TsuzuKit.</p>
+<p class="note">See also <a href="support.html">Help</a>, <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+</main>
+<footer class="site"><div class="wrap">
+<p><a href="./">About</a><a href="support.html">Help & Contact</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a></p>
+<p>Warifuri is made by Ryo Tsuzukihashi, an independent developer (TsuzuKit).</p>
+<p>© 2026 TsuzuKit</p>
+</div></footer>
+</div>
+</body>
+</html>
