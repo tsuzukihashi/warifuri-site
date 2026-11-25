@@ -1,11 +1,11 @@
-/* わりふり — 白い地・墨の文字・朱の差し色（白の上で 4.5:1 以上） */
+/* わりふり — 白い地・墨の文字・深い緑の差し色（アプリと同じ。白の上で 6.4:1）。変数の名前はほかのアプリのサイトとそろえて vermilion のまま */
 :root {
   --paper: #ffffff; --card: #fbf7ee; --ink: #232323; --sub: #555555; --line: #e6e1d6;
-  --vermilion: #b8432a; --vermilion-soft: #fbe7e1; --navy: #2b2b2b; --correct: #3f7a33;
+  --vermilion: #2e6b34; --vermilion-soft: #e4f1dd; --navy: #2b2b2b; --correct: #3f7a33; --on-accent: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
   :root { --paper: #121418; --card: #1b1e24; --ink: #eef0f4; --sub: #b4b9c4; --line: #2a2f38;
-    --vermilion: #ffd45c; --vermilion-soft: #2a2618; --navy: #ffd45c; --correct: #9fd08c; }
+    --vermilion: #9fd08c; --vermilion-soft: #1f2a1c; --navy: #9fd08c; --correct: #9fd08c; --on-accent: #121418; }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -26,7 +26,7 @@ h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.35; margin: 8px 0 16px; l
 h2 { font-size: 24px; margin: 56px 0 16px; line-height: 1.5; }
 h3 { font-size: 17px; margin: 0 0 6px; }
 .lead { font-size: 17px; color: var(--sub); }
-.cta { display: inline-block; margin-top: 20px; background: var(--vermilion); color: #ffffff; font-weight: 700; text-decoration: none;
+.cta { display: inline-block; margin-top: 20px; background: var(--vermilion); color: var(--on-accent); font-weight: 700; text-decoration: none;
   padding: 14px 26px; border-radius: 16px; }
 .note { font-size: 13px; color: var(--sub); }
 .hero img { width: 100%; max-width: 320px; height: auto; justify-self: center; }
